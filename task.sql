@@ -17,8 +17,8 @@ CREATE TABLE Products (
 
 CREATE TABLE Warehouses (
   ID INT AUTO_INCREMENT,
-  Name VARCHAR(30)
-  Address VARCHAR(50)
+  Name VARCHAR(30),
+  Address VARCHAR(50),
   CountryID INT,
 	FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE NO ACTION,
     PRIMARY KEY (ID)
